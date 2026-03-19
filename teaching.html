@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teaching | Neha Betai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink:    #1a1a2e;
+      --muted:  #5a5a72;
+      --accent: #c0392b;
+      --rule:   #dddde8;
+      --bg:     #faf9f7;
+      --card:   #ffffff;
+      --max:    760px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.7; color: var(--ink); background: var(--bg); }
+
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(250,249,247,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); }
+    .nav-inner { max-width: var(--max); margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; height: 56px; }
+    .nav-name { font-family: 'Lora', serif; font-weight: 600; font-size: 1rem; color: var(--ink); text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+    .page { max-width: var(--max); margin: 0 auto; padding: 4rem 2rem; }
+    .page-title { font-family: 'Lora', serif; font-size: 2rem; font-weight: 600; margin-bottom: 3rem; }
+
+    .sub-label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; margin-top: 2.5rem; }
+    .sub-label:first-child { margin-top: 0; }
+
+    .teaching-grid { display: flex; flex-direction: column; margin-bottom: 1rem; }
+    .course { display: grid; grid-template-columns: 1fr auto; align-items: baseline; padding: 0.9rem 0; border-bottom: 1px solid var(--rule); }
+    .course:last-child { border-bottom: none; }
+    .course-name { font-weight: 600; font-size: 0.95rem; }
+    .course-role { font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+    .course-year { font-size: 0.82rem; color: var(--muted); white-space: nowrap; margin-left: 1rem; }
+
+    footer { border-top: 1px solid var(--rule); text-align: center; padding: 2rem; font-size: 0.8rem; color: var(--muted); margin-top: 4rem; }
+
+    @media (max-width: 600px) { .nav-links { gap: 1.2rem; } }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Neha Betai</a>
+    <ul class="nav-links">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html" class="active">Teaching</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page">
+  <h1 class="page-title">Teaching</h1>
+
+  <p class="sub-label">Instructor on Record</p>
+  <div class="teaching-grid">
+    <div class="course">
+      <div>
+        <div class="course-name">Principles of Economics I</div>
+        <div class="course-role">George Washington University</div>
+      </div>
+      <div class="course-year">Summer 2024</div>
+    </div>
+    <div class="course">
+      <div>
+        <div class="course-name">Macroeconomics &amp; Global Politics</div>
+        <div class="course-role">CTY Johns Hopkins University</div>
+      </div>
+      <div class="course-year">Summer 2022</div>
+    </div>
+  </div>
+
+  <p class="sub-label">Teaching Assistant</p>
+  <div class="teaching-grid">
+    <div class="course">
+      <div>
+        <div class="course-name">Principles of Economics I</div>
+        <div class="course-role">George Washington University</div>
+      </div>
+      <div class="course-year">Fall 2021, Spring 2022, Fall 2024, Fall 2025</div>
+    </div>
+    <div class="course">
+      <div>
+        <div class="course-name">Survey of International Economics</div>
+        <div class="course-role">George Washington University</div>
+      </div>
+      <div class="course-year">Spring 2024, Spring 2025, Spring 2026</div>
+    </div>
+    <div class="course">
+      <div>
+        <div class="course-name">International Economics</div>
+        <div class="course-role">George Washington University</div>
+      </div>
+      <div class="course-year">Fall 2022, Spring 2023</div>
+    </div>
+    <div class="course">
+      <div>
+        <div class="course-name">International Trade</div>
+        <div class="course-role">George Washington University</div>
+      </div>
+      <div class="course-year">Fall 2023</div>
+    </div>
+    <div class="course">
+      <div>
+        <div class="course-name">Managerial Economics</div>
+        <div class="course-role">IIM Bangalore</div>
+      </div>
+      <div class="course-year">2020&ndash;2021</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 Neha Betai &middot; George Washington University</p>
+</footer>
+</body>
+</html>

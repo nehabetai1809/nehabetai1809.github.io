@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Neha Betai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink:    #1a1a2e;
+      --muted:  #5a5a72;
+      --accent: #c0392b;
+      --rule:   #dddde8;
+      --bg:     #faf9f7;
+      --card:   #ffffff;
+      --max:    760px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.7; color: var(--ink); background: var(--bg); }
+
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(250,249,247,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); }
+    .nav-inner { max-width: var(--max); margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; height: 56px; }
+    .nav-name { font-family: 'Lora', serif; font-weight: 600; font-size: 1rem; color: var(--ink); text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+    .page { max-width: var(--max); margin: 0 auto; padding: 4rem 2rem; }
+    .page-title { font-family: 'Lora', serif; font-size: 2rem; font-weight: 600; margin-bottom: 3rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .contact-item { display: flex; flex-direction: column; }
+    .contact-item .label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
+    .contact-item span, .contact-item a { font-size: 1rem; color: var(--ink); text-decoration: none; }
+    .contact-item a:hover { color: var(--accent); }
+
+    footer { border-top: 1px solid var(--rule); text-align: center; padding: 2rem; font-size: 0.8rem; color: var(--muted); margin-top: 4rem; }
+
+    @media (max-width: 600px) { .nav-links { gap: 1.2rem; } .contact-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Neha Betai</a>
+    <ul class="nav-links">
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page">
+  <h1 class="page-title">Contact</h1>
+
+  <div class="contact-grid">
+
+    <div class="contact-item">
+      <span class="label">Email</span>
+      <span>nehabetai96[at]gwu[dot]edu</span>
+    </div>
+
+    <div class="contact-item">
+      <span class="label">Office</span>
+      <span>Monroe Hall 340<br>2115 G Street NW<br>Washington, DC 20052</span>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Neha Betai &middot; George Washington University</p>
+</footer>
+</body>
+</html>
